@@ -5,9 +5,9 @@ package br.com.esec.estudo.model;
  *
  */
 public class Funcionario {
-	String nome;
-	String cpf;
-	double salario;
+	private String nome;
+	private String cpf;
+	private double salario;
 
 	public Funcionario(String nome, String cpf, double salario) {
 		super();

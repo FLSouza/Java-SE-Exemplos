@@ -5,8 +5,8 @@ package br.com.esec.estudo.model;
  *
  */
 public class Gerente extends Funcionario {
-	int senha;
-	int numeroDeFuncionariosGerenciados;
+	private int senha;
+	private int numeroDeFuncionariosGerenciados;
 
 	public Gerente(String nome, String cpf, double salario, int senha, int numeroDeFuncionariosGerenciados) {
 		//'super' chama o construtor da classe pai para passar os parâmetros pertencentes a ele
