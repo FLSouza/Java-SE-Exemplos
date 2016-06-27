@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Vector;
 
-public class Principal {
+public class Main {
 	public static void main(String[] args) throws InterruptedException {
 		// Lista lista = new Lista(); <-- Lista feita na mão com synchronized
 		// A classe ArrayList não thread safe.

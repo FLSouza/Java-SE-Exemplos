@@ -2,7 +2,7 @@ package br.com.esec.buscaTextual;
 
 //Busca nome em três arquivos de texto diferentes. 
 //Cada procura é feita em uma Thread diferente.
-public class Principal {
+public class Main {
 	public static void main(String[] args) {
 		// String nomeProcurado = "Jon";
 		//Procurando pelo nome com expressões regulares
