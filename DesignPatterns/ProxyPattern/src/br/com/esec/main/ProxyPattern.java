@@ -7,11 +7,11 @@ public class ProxyPattern {
 	public static void main(String[] args) {
 		Image image = new ProxyImage("test_10mb.jpg");
 
-		// image will be loaded from disk
+		// A imagem vai ser carregada do disco.
 		image.display();
 		System.out.println("");
 
-		// image will not be loaded from disk
+		// A imagem não vai ser carregada do disco.
 		image.display();
 	}
 }

@@ -7,6 +7,8 @@ public class Employee {
 	private String name;
 	private String dept;
 	private int salary;
+	
+	//Grupo de objeto referenciando a própria classe
 	private List<Employee> subordinates;
 
 	// constructor

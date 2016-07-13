@@ -6,10 +6,11 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
-
+//Esses são os métodos GET e POST que irão ser usados para consumir o serviço REST
 @Path("/json/product")
 public class JSONService {
 
+	// Simula a busca de um produto
 	@GET
 	@Path("/get")
 	@Produces("application/json")
@@ -23,6 +24,7 @@ public class JSONService {
 
 	}
 
+	// Simula a criação de um produto
 	@POST
 	@Path("/post")
 	@Consumes("application/json")

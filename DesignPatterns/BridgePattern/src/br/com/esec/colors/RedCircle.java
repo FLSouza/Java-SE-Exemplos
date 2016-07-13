@@ -2,6 +2,7 @@ package br.com.esec.colors;
 
 import br.com.esec.interfaces.DrawAPI;
 
+//Classe concreta, implementando a interface DrawAPI
 public class RedCircle implements DrawAPI {
 	@Override
 	public void drawCircle(int radius, int x, int y) {

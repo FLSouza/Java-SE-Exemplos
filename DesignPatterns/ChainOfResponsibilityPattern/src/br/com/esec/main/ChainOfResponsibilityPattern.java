@@ -7,7 +7,9 @@ import br.com.esec.loggers.FileLogger;
 
 public class ChainOfResponsibilityPattern {
 	private static AbstractLogger getChainOfLoggers() {
-
+		// Nesse exemplo cada logger checa o level da mensagem de acordo com seu level.
+		// Se a mensagem estive de acordo com seu level a mensagem é tratada,
+		// caso contrário a mensagem não é escrita e é passada para o próximo logger.
 		AbstractLogger errorLogger = new ErrorLogger(AbstractLogger.ERROR);
 		AbstractLogger fileLogger = new FileLogger(AbstractLogger.DEBUG);
 		AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.INFO);

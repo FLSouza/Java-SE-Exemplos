@@ -8,7 +8,8 @@ import br.com.esec.players.VlcPlayer;
 public class MediaAdapter implements MediaPlayer {
 
 	AdvancedMediaPlayer advancedMusicPlayer;
-
+	
+	//Usa a interface AdvancedMediaPlayer() para adaptar o tipo de audio
 	public MediaAdapter(String audioType) {
 
 		if (audioType.equalsIgnoreCase("vlc")) {

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+//Exemplo de consumo do REST com GET utilizando java.net.URL
 public class NetClientGet {
 
 	// http://localhost:8080/UrlConnection/json/product/get

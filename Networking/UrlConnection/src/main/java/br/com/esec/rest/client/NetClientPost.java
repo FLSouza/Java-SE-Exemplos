@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-
+//Exemplo de consumo do REST com POST utilizando java.net.URL
 public class NetClientPost {
 
 	// http://localhost:8080/UrlConnection/json/product/post

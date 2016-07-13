@@ -8,7 +8,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-
+//Exemplo de consumo do REST com POST utilizando Apache HttpComponents
 public class ApacheHttpClientPost {
 
 	// http://localhost:8080/ApacheHttp/json/product/post

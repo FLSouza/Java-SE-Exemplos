@@ -7,7 +7,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-
+// Exemplo de consumo do REST com GET utilizando Apache HttpComponents  
 public class ApacheHttpClientGet {
 
 	// http://localhost:8080/ApacheHttp/json/product/get

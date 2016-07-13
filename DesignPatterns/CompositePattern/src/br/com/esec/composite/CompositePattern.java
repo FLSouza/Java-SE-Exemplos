@@ -1,6 +1,8 @@
 package br.com.esec.composite;
 
 public class CompositePattern {
+	// Nesse exemplo a classe Employee() contem um grupo 
+	//da sua própria classe
 	public static void main(String[] args) {
 
 		Employee CEO = new Employee("John", "CEO", 30000);

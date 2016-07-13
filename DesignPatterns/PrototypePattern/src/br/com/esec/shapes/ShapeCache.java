@@ -11,9 +11,8 @@ public class ShapeCache {
 		return (Shape) cachedShape.clone();
 	}
 
-	// for each shape run database query and create shape
+	// Cada vez que o shape for executado database query e cria shape
 	// shapeMap.put(shapeKey, shape);
-	// for example, we are adding three shapes
 
 	public static void loadCache() {
 		Circle circle = new Circle();

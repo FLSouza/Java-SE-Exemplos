@@ -7,9 +7,11 @@ import br.com.esec.shapes.Rectangle;
 
 public class DecoratorPattern {
 	public static void main(String[] args) {
-
+		
 		Shape circle = new Circle();
-
+		
+		//Nesse exemplo Shape() recebe Decorator() sem que a classe shape
+		//seja alterada.
 		Shape redCircle = new RedShapeDecorator(new Circle());
 
 		Shape redRectangle = new RedShapeDecorator(new Rectangle());
