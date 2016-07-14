@@ -18,4 +18,5 @@ Foi incluído no Java 7 para diminuir a verbosidade no uso de Generics
 	Map<String, List<String>> anagrams = new HashMap<String, List<String>>();
 	//Dessa maneira fica menos verboso
 	Map<String, List<String>> anagrams = new HashMap<>();
-	
+
+TODO: Explicar o que é *Type Erasure* e qual a consequência de Java não ter *Reified Generics*.
