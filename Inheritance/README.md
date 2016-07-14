@@ -8,4 +8,9 @@ Permintem o uso do polimorfismo. Com upcasting um objeto do tipo subclasse pode 
 
 # Composição vs Herança
 
-O aconselhável é usar composição, preferir sempre "Tem-Um" ao invés de "É-UM". A herança deve ser utilizada com muita prudência em pouquíssimas situações.  
+O aconselhável é usar composição, preferir sempre "Tem-Um" ao invés de "É-UM". A herança deve ser utilizada com muita prudência em pouquíssimas situações.
+
+TODO: Explicar o que é o problema do diamante e por que Java escolheu não ter herança múltipla.
+
+TODO: Suponha que você queria criar uma classe que herda tanto de `java.io.InputStream` quanto de `java.util.Observable`.
+      Como Java não tem herança múltipla, explique como você conseguiria simular isso usando composição (dica: inner class).
