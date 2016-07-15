@@ -3,7 +3,7 @@ package br.com.esec.main;
 import br.com.esec.factories.ShapeFactory;
 import br.com.esec.interfaces.Shape;
 
-public class FactoryPattern {
+public class FactoryMethodPattern {
 
 	// Nesse exemplo é criado uma interface Shape() e classe concretas
 	// implementando essa interface.
