@@ -6,6 +6,7 @@ import java.util.regex.Pattern;
 public class CapturingGroups {
 	public static void main(String args[]) {
 		String line = "Primeiro grupo Sg2000! Terceiro grupo!";
+		// Os grupos são divididos por parenteses
 		Pattern pattern = Pattern.compile("(.*?)(\\d+)(.*)");
 		Matcher matcher = pattern.matcher(line);
 
