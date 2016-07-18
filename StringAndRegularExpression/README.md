@@ -5,7 +5,13 @@ Para formatar Strings em Java existem dois métodos:
 	format() --> java.lang.String
 	printf() --> PrintStream class
 
-TODO: Criar exemplo de uso das classes `java.text.MessageFormat` e `java.text.SimpleDateFormat`.
+# MessageFormat(java.text.MessageFormat)
+
+É uma classe que pega um conjunto de objetos, formata esses objetos para depois inseri-los nos locais corretos da String formatada. 
+
+# SimpleDateFormat(java.text.SimpleDateFormat)
+
+Permite que strings com informações sobre data e tempo sejam convertidas para e de objetos **java.util.Date**. 
 
 # Regular Expression
 
