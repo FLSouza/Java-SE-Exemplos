@@ -1,8 +1,8 @@
 package br.com.esec.shapes;
 
-import br.com.esec.interfaces.Shape;
+import br.com.esec.interfaces.AbstractShape;
 
-public class Circle implements Shape {
+public class Circle implements AbstractShape {
 
 	@Override
 	public void draw() {
