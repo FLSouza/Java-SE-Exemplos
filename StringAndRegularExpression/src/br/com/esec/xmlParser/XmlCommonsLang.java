@@ -1,4 +1,4 @@
-package br.com.esec.apacheLang;
+package br.com.esec.xmlParser;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
