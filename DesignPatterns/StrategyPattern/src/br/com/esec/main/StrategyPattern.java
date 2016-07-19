@@ -1,21 +1,24 @@
 package br.com.esec.main;
 
-import br.com.esec.operations.Context;
-import br.com.esec.operations.OperationAdd;
-import br.com.esec.operations.OperationMultiply;
-import br.com.esec.operations.OperationSubstract;
+import br.com.esec.strategy.CreditCardStrategy;
+import br.com.esec.strategy.PaypalStrategy;
 
 public class StrategyPattern {
+	// Esse exemplo usa um carrinho de comprar onde são usadas
+	// duas estratégias de pagamento, Cartão de crédito ou PayPal.
 	public static void main(String[] args) {
-		// Nesse caso o comportamento de Context() irá mudar de 
-		// acordo com a strategy que ela executa.
-		Context context = new Context(new OperationAdd());
-		System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
 
-		context = new Context(new OperationSubstract());
-		System.out.println("10 - 5 = " + context.executeStrategy(10, 5));
+		Item item1 = new Item("1212", 20);
+		Item item2 = new Item("3457", 60);
 
-		context = new Context(new OperationMultiply());
-		System.out.println("10 * 5 = " + context.executeStrategy(10, 5));
+		carrinho.adicionaItem(item1);
+		carrinho.adicionaItem(item2);
+
+		// pay by paypal
+		carrinho.paga(new PaypalStrategy("myemail@example.com", "mypwd"));
+
+		// pay by credit card
+		carrinho.paga(new CreditCardStrategy("Felipe Lara", "1234567890123456", "786", "12/15"));
 	}
 }

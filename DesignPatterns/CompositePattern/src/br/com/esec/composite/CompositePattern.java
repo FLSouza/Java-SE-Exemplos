@@ -1,40 +1,21 @@
 package br.com.esec.composite;
 
+import br.com.esec.interfaces.Employee;
+
 public class CompositePattern {
-	// Nesse exemplo a classe Employee() contem um grupo 
-	//da sua própria classe
+	// Nesse exemplo são 5 employees. Serão impressos nome e salário
+	// de todos os employees de cima para baixo.
 	public static void main(String[] args) {
-
-		Employee CEO = new Employee("John", "CEO", 30000);
-
-		Employee headSales = new Employee("Robert", "Head Sales", 20000);
-
-		Employee headMarketing = new Employee("Michel", "Head Marketing", 20000);
-
-		Employee clerk1 = new Employee("Laura", "Marketing", 10000);
-		Employee clerk2 = new Employee("Bob", "Marketing", 10000);
-
-		Employee salesExecutive1 = new Employee("Richard", "Sales", 10000);
-		Employee salesExecutive2 = new Employee("Rob", "Sales", 10000);
-
-		CEO.add(headSales);
-		CEO.add(headMarketing);
-
-		headSales.add(salesExecutive1);
-		headSales.add(salesExecutive2);
-
-		headMarketing.add(clerk1);
-		headMarketing.add(clerk2);
-
-		// print all employees of the organization
-		System.out.println(CEO);
-
-		for (Employee headEmployee : CEO.getSubordinates()) {
-			System.out.println(headEmployee);
-
-			for (Employee employee : headEmployee.getSubordinates()) {
-				System.out.println(employee);
-			}
-		}
+		Employee emp1 = new Developer("John", 10000);
+		Employee emp2 = new Developer("David", 15000);
+		Employee manager1 = new Manager("Daniel", 25000);
+		manager1.add(emp1);
+		manager1.add(emp2);
+		Employee emp3 = new Developer("Michael", 20000);
+		Manager generalManager = new Manager("Mark", 50000);
+		generalManager.add(emp3);
+		generalManager.add(manager1);
+		generalManager.print();
 	}
+
 }
