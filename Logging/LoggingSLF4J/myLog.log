@@ -1,0 +1,14 @@
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+SEVERE: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+WARNING: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+INFO: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+CONFIG: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+FINE: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+FINER: Hello from java.util.logging.
+Jul 18, 2016 11:30:34 PM br.com.esec.logging.JavaLogging logMessag
+FINEST: Hello from java.util.logging.
